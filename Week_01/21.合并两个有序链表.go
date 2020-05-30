@@ -13,7 +13,6 @@
  * }
  */
 func mergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode {
-
 	l3 := &ListNode{}
 	head := l3
 
