@@ -36,4 +36,4 @@ def recursion(level, param1, param2,...) {
 2. 在终止时把解加入结果集时，如果解是引用类型时需要copy
 
 
-![分支算法](./b7f424d58e7fb425b82d468bff5b29fea211d73e00e879d3a69309e5b873095b.png)  
+![图 3](./6fed5e408bf51b94b070c064778a575da2bbe0c23c64606bb219d3528834b4d8.png)  
