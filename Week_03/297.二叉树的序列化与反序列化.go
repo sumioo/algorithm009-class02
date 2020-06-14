@@ -106,37 +106,3 @@ func (this *Codec) deserialize(data string) *TreeNode {
  */
 // @lc code=end
 
-func threeSum(nums []int) [][]int {
-	sort.Ints(nums)
-	length := len(nums)
-	result := [][]int{}
-
-	for n := 0; n < length-2; n++ {
-		i := n + 1
-		j := length - 1
-
-		if n > 0 && nums[n] == nums[n-1] {
-			continue
-		}
-
-		for i < j {
-			sum := nums[n] + nums[i] + nums[j]
-			if sum == 0 {
-				result = append(result, []int{nums[n], nums[i], nums[j]})
-				i++
-				j--
-				for i < j && nums[i] == nums[i-1] {
-					i++
-				}
-				for i < j && nums[j] == nums[j+1] {
-					j--
-				}
-			} else if sum < 0 {
-				i++
-			} else {
-				j--
-			}
-		}
-	}
-	return result
-}

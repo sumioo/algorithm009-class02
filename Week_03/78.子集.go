@@ -58,6 +58,13 @@ func subsetsA(nums []int) [][]int {
 	return result
 }
 
+/*
+从空集合开始
+1 []
+2 [], [1]
+3 [], [1,2], [2]
+4 [], [1], [1,2], [2]  [3], [1,3], [1,2,3], [2,3]
+*/
 func subsets(nums []int) [][]int {
 	result := [][]int{}
 	result = append(result, []int{})
