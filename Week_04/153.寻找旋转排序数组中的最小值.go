@@ -32,7 +32,8 @@
  * 输出: 0
  *
  */
-
+ package week4
+ 
 // @lc code=start
 func findMin(nums []int) int {
 	if len(nums) == 1 {

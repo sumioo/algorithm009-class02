@@ -56,10 +56,11 @@
  * 解释: endWord "cog" 不在字典中，所以无法进行转换。
  *
  */
+package week4
 
 // @lc code=start
 
-func isOneLetterDiff(wordA string, wordB string) bool {
+func isOneLetterDiff2(wordA string, wordB string) bool {
 	n := len(wordA)
 	for i := 0; i < n; i++ {
 		if wordA[i] != wordB[i] {
@@ -69,10 +70,10 @@ func isOneLetterDiff(wordA string, wordB string) bool {
 	return false
 }
 
-func searchEdges(vertex string, wordList []string) []string {
+func searchEdges2(vertex string, wordList []string) []string {
 	edges := []string{}
 	for _, word := range wordList {
-		if isOneLetterDiff(vertex, word) {
+		if isOneLetterDiff2(vertex, word) {
 			edges = append(edges, word)
 		}
 	}
@@ -101,7 +102,7 @@ func ladderLength(beginWord string, endWord string, wordList []string) int {
 				goto RETURN
 			}
 
-			for _, edge := range searchEdges(vertex, wordList) {
+			for _, edge := range searchEdges2(vertex, wordList) {
 				if !visited[edge] {
 					queue = append(queue, edge)
 					visited[edge] = true
@@ -120,4 +121,3 @@ RETURN:
 }
 
 // @lc code=end
-

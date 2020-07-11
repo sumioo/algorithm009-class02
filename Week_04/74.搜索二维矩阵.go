@@ -51,6 +51,8 @@
 row := index / columns
 column := index % columns
 */
+package week4
+
 func searchMatrix(matrix [][]int, target int) bool {
 	if len(matrix) == 0 || len(matrix[0]) == 0 {
 		return false

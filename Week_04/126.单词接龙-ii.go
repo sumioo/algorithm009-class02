@@ -66,6 +66,7 @@
 2. 如何得到到达某个点的全部最短路径
 
 */
+package week4
 
 func isOneLetterDiff(wordA string, wordB string) bool {
 	n := len(wordA)
@@ -155,4 +156,3 @@ func findLadders(beginWord string, endWord string, wordList []string) [][]string
 }
 
 // @lc code=end
-

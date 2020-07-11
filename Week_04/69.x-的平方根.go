@@ -39,6 +39,8 @@
 /*
 我们的目标是查找满足 k^2 <= x的最大k值
 */
+package week4
+
 func mySqrt(x int) int {
 	left, right := 0, x
 	ans := -1

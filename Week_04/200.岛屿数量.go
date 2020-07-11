@@ -43,7 +43,8 @@
  *
  *
  */
-
+ package week4
+ 
 // @lc code=start
 func dfs(grid [][]byte, row int, column int) {
 	if row >= len(grid) || row < 0 || column >= len(grid[row]) || column < 0 || grid[row][column] != '1' {

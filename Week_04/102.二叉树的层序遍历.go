@@ -56,6 +56,7 @@
 绝对不会跳跃，那么我们可以利用这一点，但我们发现slice长度等于level时（以0作为level的起点），我们用append增加slice长度。
 
 */
+package week4
 
 func dfs(root *TreeNode, level int, values *[][]int) {
 	if root == nil {
@@ -111,4 +112,3 @@ func levelOrder(root *TreeNode) [][]int {
 }
 
 // @lc code=end
-

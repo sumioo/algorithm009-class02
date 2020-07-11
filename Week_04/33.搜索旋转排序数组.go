@@ -35,7 +35,7 @@
  * 输出: -1
  *
  */
-
+ package week4
 // @lc code=start
 /*
 如果[left,mid]是无序的，那么[mid, right]必定是有序的，反之也成立。

@@ -45,6 +45,7 @@
 
 
 */
+package week4
 
 // @lc code=start
 
@@ -86,4 +87,3 @@ func generateParenthesis(n int) []string {
 }
 
 // @lc code=end
-

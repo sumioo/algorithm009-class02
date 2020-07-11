@@ -29,7 +29,8 @@
  *
  *
  */
-
+ package week4
+ 
 // @lc code=start
 func isPerfectSquare(num int) bool {
 	left, right := 0, num
