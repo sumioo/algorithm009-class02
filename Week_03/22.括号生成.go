@@ -70,11 +70,11 @@ func generate(s string, leftBracketNum int, rightBracketNum int, result *[]strin
 		return
 	}
 
-	if leftBracketNum > 0 {
+	if leftBracketNum > 0 { //左括号只要没有用完就可以插入
 		generate(s+"(", leftBracketNum-1, rightBracketNum, result)
 	}
 
-	if rightBracketNum > leftBracketNum {
+	if rightBracketNum > leftBracketNum { //只有左括号被使用后才能插入右括号
 		generate(s+")", leftBracketNum, rightBracketNum-1, result)
 	}
 }
