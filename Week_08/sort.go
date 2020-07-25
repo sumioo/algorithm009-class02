@@ -25,6 +25,7 @@ func bubbleSort(nums []int) {
 /*
 从前到后逐步构建有序序列
 假设前n位是有序的，那么n+1位和前n位比较，找出小于他的那个位置，在那个位置后插入
+起始时假设前1个是有序的
 如果序列是大部分有序的，插入排序有较好的性能，选择排序和冒泡排序不具有这个特点
 */
 func insertSort(nums []int) {
@@ -72,7 +73,7 @@ func partition(nums []int, left int, right int) int {
 	pivot := right
 	counter := left
 	for i := left; i < right; i++ {
-		if nums[i] < nums[pivot] {
+		if nums[i] <= nums[pivot] {
 			// if counter != i {
 			nums[counter], nums[i] = nums[i], nums[counter]
 			// }

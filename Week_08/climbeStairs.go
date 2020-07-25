@@ -2,7 +2,6 @@ package week8
 
 import (
 	"fmt"
-	"unicode"
 )
 
 /*

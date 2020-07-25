@@ -53,7 +53,7 @@ func TestQuickSort(t *testing.T) {
 	quickSort(nums)
 	t.Log(nums)
 
-	nums = []int{5, 4, 3, 2, 1}
+	nums = []int{0, 0, 1, 2, 3, 5, 6, 1}
 	quickSort(nums)
 	t.Log(nums)
 }
